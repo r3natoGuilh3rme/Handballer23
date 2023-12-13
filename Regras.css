@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color:white; /* verde escuro */
+  color: #fff; /* texto branco */
+}
+
+header {
+  background-color: #4CAF50; /* fundo escuro para o cabeçalho */
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+.content {
+  display: none;
+  color: #121111;
+}
+
+.toggle-btn {
+  cursor: pointer;
+  color: #4CAF50; 
+}
+
+main {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+section {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #4CAF50; /* linha divisória entre seções */
+}
+
+h3 {
+  color: #4CAF50; /* verde escuro para os títulos de seção */
+}
+
+p {
+  line-height: 1.6;
+}
+
+.btn-voltar {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50; /* verde escuro para o botão */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-voltar:hover {
+  background-color: #45a049; /* tom mais escuro ao passar o mouse */
+}

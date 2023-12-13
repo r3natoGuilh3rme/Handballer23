@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="HandBaller.2.css">
+    <title>HandBaller - TCC</title>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>HANDBALLER</h1>
+        </header>
+        <figure class="fundoverde"> </figure>
+        <main>
+            <div class="buttons-container">
+                <button id="btnGuias">Guias</button>
+                <button id="btnRegras">Regras</button>
+                <button id="btnExercicios">Exercícios</button>
+                <button id="btnQuadroTatico">Quadro Tático</button>
+                <a href="HandBaller.1.html" id="btnVoltar" class="btn-voltar">Voltar</a>
+            </div>
+        </main>
+    </div>
+
+    <script src="Regras.js"></script>
+    <script>
+        document.getElementById("btnGuias").onclick = function() {
+            window.location.href = "Guias.html";
+        };
+
+        document.getElementById("btnExercicios").onclick = function() {
+            window.location.href = "Exercicios.html";
+        };
+    </script>
+</body>
+</html>
+

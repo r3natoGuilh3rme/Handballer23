@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 20px;
+        }
+
+        .muscle-group {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #4CAF50;
+            padding-bottom: 20px;
+        }
+
+        .group-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .exercise-container {
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .exercise-info {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .video-container {
+            margin-top: 10px;
+        }
+        .btn-voltar {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #4CAF50; /* verde escuro para o botão */
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        }
+
+       .btn-voltar:hover {
+        background-color: #45a049; /* tom mais escuro ao passar o mouse */
+        }
+
+    </style>
+    <script>
+        function toggleInfo(exerciseId) {
+            var exerciseInfo = document.getElementById(exerciseId);
+            exerciseInfo.style.display = (exerciseInfo.style.display === 'none' || exerciseInfo.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+
+    <!-- FORTALECIMENTO PARA O QUADRICIPES -->
+    <div class="muscle-group">
+        <div class="group-title">FORTALECIMENTO PARA O QUADRICIPES</div>
+        <p>O treinamento dos quadríceps é crucial para os jogadores de handebol. Essa região muscular desempenha um papel essencial em movimentos como sprints, saltos e mudanças rápidas de direção. Fortalecer os quadríceps não só melhora a performance, permitindo movimentos mais explosivos, mas também reduz o risco de lesões, proporcionando estabilidade e resistência muscular. Em resumo, dedicar tempo ao treinamento específico dos quadríceps é uma estratégia fundamental para o sucesso e a segurança dos atletas de handebol.</p>
+        <div class="exercise-container">
+            <button class="button" onclick="toggleInfo('quadricipes-exercise-1')">Deadlift romeno com uma perna</button>
+            <div id="quadricipes-exercise-1" class="exercise-info">
+             
+                <div class="video-container">
+                    <!-- Tag de vídeo para o exercício 1 -->
+                    <iframe width="560" height="315" src="https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-single-legged-romanian-deadlifts-front.mp4#t=0.1" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="exercise-container">
+            <button class="button" onclick="toggleInfo('quadricipes-exercise-2')">Pulmões para frente</button>
+            <div id="quadricipes-exercise-2" class="exercise-info">
+                
+                <div class="video-container">
+                    <!-- Tag de vídeo para o exercício 2 -->
+                    <iframe width="560" height="315" src="https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-forward-lunges-front.mp4#t=0.1" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="exercise-container">
+            <button class="button" onclick="toggleInfo('quadricipes-exercise-3')">Agachamentos de pulo</button>
+            <div id="quadricipes-exercise-3" class="exercise-info">
+                
+                <div class="video-container">
+                    <!-- Tag de vídeo para o exercício 3 -->
+                    <iframe width="560" height="315" src="https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-jump-squats-front.mp4#t=0.1" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FORTALECIMENTO PARA A PARTE POSTERIOR DO QUADRICIPES -->
+    <div class="muscle-group">
+        <div class="group-title">FORTALECIMENTO PARA A PARTE POSTERIOR DO QUADRICIPES</div>
+        <p>O treinamento do posterior de quadríceps é crucial no handebol. Essa área na parte de trás da coxa complementa os quadríceps, contribuindo para estabilidade, prevenção de lesões e eficiência nos movimentos. Equilibrar essas regiões musculares é essencial para um desempenho otimizado em quadra..</p>
+        <div class="exercise-container">
+            <button class="button" onclick="toggleInfo('posterior-quadriceps-exercise-1')">Bons Dias</button>
+            <div id="posterior-quadriceps-exercise-1" class="exercise-info">
+                
+                <div class="video-container">
+                    <!-- Tag de vídeo para o exercício 1 -->
+                    <iframe width="560" height="315" src="https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-good-mornings-side.mp4#t=0.1" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="exercise-container">
+            <button class="button" onclick="toggleInfo('posterior-quadriceps-exercise-2')">Estocada reversa de peso corporal</button>
+            <div id="posterior-quadriceps-exercise-2" class="exercise-info">
+                
+                <div class="video-container">
+                    <!-- Tag de vídeo para o exercício 2 -->
+                    <iframe width="560" height="315" src="https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-bodyweight-reverse-lunge-side.mp4#t=0.1" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="exercise-container">
+            <button class="button" onclick="toggleInfo('posterior-quadriceps-exercise-3')">Curvatura Nórdica dos Isquiotibiais</button>
+            <div id="posterior-quadriceps-exercise-3" class="exercise-info">
+                
+                <div class="video-container">
+                    <!-- Tag de vídeo para o exercício 3 -->
+                    <iframe width="560" height="315" src="https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-nordic-hamstring-curl-side.mp4#t=0.1" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FORTALECIMENTO DA PANTURRILHA -->
+    <div class="muscle-group">
+        <div class="group-title">FORTALECIMENTO DA PANTURRILHA</div>
+        <p>A panturrilha é crucial no handebol. Fortalecê-la melhora a propulsão, saltos e estabilidade do tornozelo, prevenindo lesões. Treinar essa região é essencial para agilidade e desempenho consistente em quadra.</p>
+        <div class="exercise-container">
+            <button class="button" onclick="toggleInfo('panturrilha-exercise-1')">Elevação da panturrilha ambulante</button>
+            <div id="panturrilha-exercise-1" class="exercise-info">
+             
+                <div class="video-container">
+                    <!-- Tag de vídeo para o exercício 1 -->
+                    <iframe width="560" height="315" src="https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-walking-calf-raises-side.mp4#t=0.1" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="exercise-container">
+            <button class="button" onclick="toggleInfo('panturrilha-exercise-2')">Caminhada na ponta dos pés</button>
+            <div id="panturrilha-exercise-2" class="exercise-info">
+                
+                <div class="video-container">
+                    <!-- Tag de vídeo para o exercício 2 -->
+                    <iframe width="560" height="315" src="https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-tip-toe-walking-side.mp4#t=0.1" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="exercise-container">
+            <button class="button" onclick="toggleInfo('panturrilha-exercise-3')">Aumento da panturrilha</button>
+            <div id="panturrilha-exercise-3" class="exercise-info">
+                
+                <div class="video-container">
+                    <!-- Tag de vídeo para o exercício 3 -->
+                    <iframe width="560" height="315" src="https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-calf-raises-side.mp4#t=0.1" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FORTALECIMENTO DOS OMBROS -->
+    <div class="muscle-group">
+        <div class="group-title">FORTALECIMENTO DOS OMBROS</div>
+        <p>Os ombros são cruciais no handebol, influenciando arremessos, passes e bloqueios. Fortalecer essa região não só melhora a potência dos movimentos, mas também reduz o risco de lesões, garantindo um desempenho mais eficiente e seguro em quadra.</p>
+        <div class="exercise-container">
+            <button class="button" onclick="toggleInfo('ombros-exercise-1')">Prensa Elevada de Lúcio</button>
+            <div id="ombros-exercise-1" class="exercise-info">
+                
+                <div class="video-container">
+                    <!-- Tag de vídeo para o exercício 1 -->
+                    <iframe width="560" height="315" src="https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-elevated-pike-press-side.mp4#t=0.1" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="exercise-container">
+            <button class="button" onclick="toggleInfo('ombros-exercise-2')">Encolher de Ombros Elevados de Lúcio</button>
+            <div id="ombros-exercise-2" class="exercise-info">
+                
+                <div class="video-container">
+                    <!-- Tag de vídeo para o exercício 2 -->
+                    <iframe width="560" height="315" src="https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-elevated-pike-shoulder-shrug-side.mp4#t=0.1" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="exercise-container">
+            <button class="button" onclick="toggleInfo('ombros-exercise-3')">Pike encolher de ombros com peso corporal</button>
+            <div id="ombros-exercise-3" class="exercise-info">
+                
+                <div class="video-container">
+                    <!-- Tag de vídeo para o exercício 3 -->
+                    <iframe width="560" height="315" src="https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-bodyweight-pike-shrug-side.mp4#t=0.1" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FORTALECIMENTO DO PEITORAL -->
+    <div class="muscle-group">
+        <div class="group-title">FORTALECIMENTO DO PEITORAL</div>
+        <p>
+            A força no peito é fundamental para os jogadores de handebol, impactando diretamente passes, bloqueios e estabilidade durante o jogo. Ao fortalecer os músculos peitorais, os atletas melhoram a eficiência nos movimentos e contribuem para uma prática esportiva mais sólida. Além disso, o treinamento adequado do peito ajuda na prevenção de lesões, promovendo um desempenho consistente e seguro em quadra.</p>
+        <div class="exercise-container">
+            <button class="button" onclick="toggleInfo('peitoral-exercise-1')">Flexão</button>
+            <div id="peitoral-exercise-1" class="exercise-info">
+                
+                
+                <div class="video-container">
+                    <!-- Tag de vídeo para o exercício 1 -->
+                    <iframe width="560" height="315" src="https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-push-up-front.mp4#t=0.1" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="exercise-container">
+            <button class="button" onclick="toggleInfo('peitoral-exercise-2')">Mergulhos</button>
+            <div id="peitoral-exercise-2" class="exercise-info">
+                
+                <div class="video-container">
+                    <!-- Tag de vídeo para o exercício 2 -->
+                    <iframe width="560" height="315" src="https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-dips-side.mp4#t=0.1" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="exercise-container">
+            <button class="button" onclick="toggleInfo('peitoral-exercise-3')">Flexão inclinada</button>
+            <div id="peitoral-exercise-3" class="exercise-info">
+                
+                <div class="video-container">
+                    <!-- Tag de vídeo para o exercício 3 -->
+                    <iframe width="560" height="315" src="https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-incline-push-up-side.mp4#t=0.1" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="exercise-container">
+            <button class="button" onclick="toggleInfo('peitoral-exercise-4')">Flexão declinada</button>
+            <div id="peitoral-exercise-4" class="exercise-info">
+               
+                <div class="video-container">
+                    <!-- Tag de vídeo para o exercício 4 -->
+                    <iframe width="560" height="315" src="https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-decline-push-up-side.mp4#t=0.1" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FORTALECIMENTO DO TRÍCEPS -->
+    <div class="muscle-group">
+        <div class="group-title">FORTALECIMENTO DO TRÍCEPS</div>
+        <p>Os tríceps desempenham um papel crucial no desempenho dos jogadores de handebol. Essa região muscular na parte de trás do braço é essencial para arremessos potentes, empurrões e estabilização durante o jogo. Ao fortalecer os tríceps, os atletas não apenas melhoram a eficácia de seus movimentos, mas também contribuem para a resistência e prevenção de lesões. O treinamento específico do tríceps é, portanto, fundamental para um desempenho consistente e seguro em quadra.</p>
+        <div class="exercise-container">
+            <button class="button" onclick="toggleInfo('triceps-exercise-1')">Mergulho</button>
+            <div id="triceps-exercise-1" class="exercise-info">
+                
+                <div class="video-container">
+                    <!-- Tag de vídeo para o exercício 1 -->
+                    <iframe width="560" height="315" src="https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-dips-front.mp4#t=0.1" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="exercise-container">
+            <button class="button" onclick="toggleInfo('triceps-exercise-2')">Flexão diamante</button>
+            <div id="triceps-exercise-2" class="exercise-info">
+                <div class="video-container">
+                    <!-- Tag de vídeo para o exercício 2 -->
+                    <iframe width="560" height="315" src="https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-diamond-push-ups-front.mp4#t=0.1" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="exercise-container">
+            <button class="button" onclick="toggleInfo('triceps-exercise-3')">Afundo no Banco</button>
+            <div id="triceps-exercise-3" class="exercise-info">
+                <div class="video-container">
+                    <!-- Tag de vídeo para o exercício 3 -->
+                    <iframe width="560" height="315" src="https://media.musclewiki.com/media/uploads/videos/branded/male-bodyweight-tricep-dips-front.mp4#t=0.1" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <a href="HandBaller.2.html" class="btn-voltar">Voltar</a>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+body {
+    overflow: hidden; /* Para evitar barras de rolagem */
+}
+.fundoverde {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* 100% da largura da viewport */
+    height: 100vh; /* 100% da altura da viewport */
+    margin: 0; /* Remover margens padrão */
+    background-image: url('background.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Mover para trás dos outros elementos */
+  }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* 100% da altura da viewport */
+}
+
+header {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 48px; /* Tamanho maior para o texto principal */
+    color: #FFFACD; /* Cor azul esverdeado */
+}
+main {
+    position: relative;
+}
+
+.buttons-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: row; /* Exibe os botões lado a lado */
+}
+
+button,
+a {
+    margin-right: 10px;
+    padding: 10px; /* Adiciona um preenchimento ao redor do texto */
+    font-size: 20px;
+    border: 2px solid transparent; /* Adiciona uma borda transparente inicialmente */
+    background: none;
+    cursor: pointer;
+    transition: color 0.3s ease, border 0.3s ease; /* Adiciona transição suave para a cor do texto e a borda */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #fff;
+    border-radius: 20px; /* Borda redonda */
+    position: relative;
+}
+
+.btn-voltar {
+    color: #fff;
+    font-size: 20px;
+    padding: 10px; /* Adiciona um preenchimento ao redor do texto */
+    border: 2px solid transparent; /* Adiciona uma borda transparente inicialmente */
+    background: none;
+    cursor: pointer;
+    transition: color 0.3s ease, border 0.3s ease; /* Adiciona transição suave para a cor do texto e a borda */
+    border-radius: 20px; /* Borda redonda */
+    position: relative;
+}
+
+/* Adiciona borda e muda a cor ao passar o mouse */
+button:hover,
+a:hover,
+.btn-voltar:hover {
+    color: #ff4d4d; /* Cor vermelha ao passar o mouse */
+    border: 2px solid #ff4d4d; /* Borda vermelha ao passar o mouse */
+}
+
+/* Remove a borda ao clicar */
+button:active,
+a:active,
+.btn-voltar:active {
+    outline: none;
+    border: 2px solid transparent; /* Adiciona uma borda transparente ao clicar */
+}
+
